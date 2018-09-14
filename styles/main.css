@@ -3,8 +3,8 @@ body {
   }
 
 header {
-    background: url(../images/hero-fog.jpg) center / cover;
-    height: 60vh;
+    background: url(../images/hero-tree.png) center / cover ;
+    height: 90vh;
     justify-content: center;
     text-align: center;
   }
