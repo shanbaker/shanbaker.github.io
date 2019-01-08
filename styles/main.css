@@ -403,7 +403,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  height: 92vh;
+  height: 100vh;
   align-content: center;
 
 }
