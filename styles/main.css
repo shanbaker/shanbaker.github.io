@@ -160,9 +160,6 @@ h5 {
       justify-content: space-between;
     }
 
-    #navbar {
-      background-color: #FFFFFF;
-    }
 
     .logo-container {
         margin-left: 1.5rem;
@@ -394,7 +391,7 @@ h5 {
 /* hero content */
 
 .hero {
-  background-image: url(../images/hero-tree.png) ;
+  /* background-image: url(../images/hero-tree.png) ;*/
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -405,18 +402,16 @@ h5 {
 
 .hero-content {
   text-align: left;
-  padding-top: 10rem;
+  padding-top: 5em;
   margin: 0 2.5rem;
-  margin-top: 10rem;
+
 }
 
-
-/* Style to not display the mouse icon */
 .scroll {
   display: none;
 }
 
-@media screen and (min-width:375px) {
+@media screen and (min-width:768px) {
 
 
 .hero {
@@ -451,7 +446,7 @@ h5 {
 }
 
 .hero-content {
-  grid-column: 3/ 13;
+  grid-column: 3 / 13;
   margin-left: 0;
   margin-right: 0;
 
