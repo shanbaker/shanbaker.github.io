@@ -416,7 +416,7 @@ h5 {
   display: none;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:375px) {
 
 
 .hero {
