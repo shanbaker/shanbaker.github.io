@@ -149,9 +149,9 @@ h5 {
 
     header {
       padding: 1rem 0.5rem;
-      /*background-color:  rgba(255, 255, 255, 0.8);
+      background-color:  rgba(255, 255, 255, 0.8);
       border-top: 0.4rem solid #f5f5fd;
-      box-shadow: 1px 1px 4px #C7CDED; */
+      box-shadow: 1px 1px 4px #C7CDED;
       display: flex;
       align-items: center;
       z-index: 1;
@@ -160,13 +160,17 @@ h5 {
       justify-content: space-between;
     }
 
+    #navbar {
+      background-color: #FFFFFF;
+    }
+
     .logo-container {
-        margin-left: .8rem;
+        margin-left: 1.5rem;
     }
 
     .logo {
       height: 100%;
-      width: 12rem;
+      width: 5rem;
     }
 
       .vegeburger {
@@ -388,7 +392,7 @@ h5 {
 
 }
 
-/* HERO CONTENT */
+/* hero content */
 
 .hero {
   background-image: url(../images/hero-tree.png) ;
