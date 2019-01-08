@@ -1,52 +1,698 @@
-body {
-    padding-bottom: 5rem;
+* {
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
   }
 
-header {
-    background: url(../images/hero-tree.png) center / cover ;
-    height: 90vh;
-    justify-content: center;
-    text-align: center;
+  body {
+    color: #333333;
+    font-family: "ff-real-text-pro", "Lato", "Josefin Sans", sans-serif;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+    }
+
+    img {
+    max-width: 100%;
+  }
+
+  /* Typography */
+
+  h1, h2, h4, h5, h6, p {
+    margin: 1rem 0;
+    font-family: "ff-real-text-pro", "Lato", sans-serif;
   }
 
   h1 {
-    color: hsla(0, 0%, 1%, 0.9);
-    font-weight: bold;
-  }
-  
+    font-size: 4.4rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 2.8;
+    margin-bottom: 0;
+    font-family: inherit;
+          }
+
+  h2 {
+    font-size: 3.0rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+      }
+
+  h3 {
+    color: #333333;
+    margin: 1rem 0;
+    font-family: "ff-real-text-pro", "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    font weight: 600;
+    letter-spacing: .1em;
+    line-height: 1.8;
+                }
+h4 {
+  font-size: 2.0rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+
+}
+
   .slogan {
-    color: hsla(0, 0%, 1%, 0.9);
-    font-weight: lighter;
-    font-size: 1.6rem;
+    color: #555555;
+    font-family: "ff-real-text-pro", "Josefin Sans", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.02em;
+    line-height: 1.7;
+    padding-top: 80px;
+
   }
 
- main {
-    max-width: 900px;
-  }
-  
-  .project-description {
-    padding-left: 0;
-  }
-  
-  .project img {
-    width: 100%;
+  .intro {
+    color: #DD643E;
+    font-weight:600;
   }
 
- footer.mdl-mini-footer {
-    bottom: 0;
-    padding: 0.5rem;   
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  footer.mdl-mini-footer > ul {
-    margin: auto;
-    font-size: 2rem;
-  }  
-   
- @media screen and (max-width: 1024px) {
-    header.mdl-layout__header {
-      display: flex;
+
+  @media screen and (min-width:768px)
+  {
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 2rem 0;
+    }
+
+    h1 {
+      font-size: 4.4rem;
+          }
+
+    h2 {
+      font-size: 2.8rem;
+      line-height: 3rem;
+    }
+
+    h3 {
+      font-size: 3.2rem;
+      line-height: 3rem;
+
+    }
+
+
+    p {
+      font-size: 2rem;
+      line-height: 3rem;
     }
   }
+
+  @media screen and (min-width:1224px) {
+
+    h1 {
+      font-size: 5.4rem;
+      padding-bottom: 60px;
+      line-height: 0;
+    }
+
+    h2 {
+      font-size: 3.2rem;
+    }
+
+    h3 {
+      font-size: 3.6rem;
+      line-height: 4rem;
+
+    }
+
+    p {
+      font-size: 2rem;
+      line-height: 3.5rem;
+    }
+
+  }
+
+  /* end typography */
+
+  /* nav - grid wrapper */
+
+    header {
+      padding: 2rem 0.5rem;
+      background-color:  rgba(255, 255, 255, 0.8);
+      border-top: 0.4rem solid #f5f5fd;
+      box-shadow: 1px 1px 4px #C7CDED;
+      display: flex;
+      align-items: center;
+      z-index: 1;
+      position: fixed;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .logo-container {
+        margin-left: .8rem;
+    }
+
+    .logo {
+      height: 100%;
+      width: 12rem;
+    }
+
+      .vegeburger {
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+      width: 2rem;
+      height: .4rem;
+      z-index: 2;
+    }
+
+    .vegeburger div {
+      position: relative;
+      width: 3rem;
+      height: .4rem;
+      border-radius: 0.1rem;
+      background-color: #DD643E;
+      margin-top: .4rem;
+      transition: all 0.5s ease-in-out;
+    }
+
+    /* NAV STYLES - vegeburger menu  */
+    .nav {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/hero-tree.png);
+      top: -100%; left: 0; right: 0; bottom: 0;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+      transform: translate(0, -100%);
+    }
+
+    .nav-wrapper {
+      position: relative;
+      overflow: hidden;
+      overflow-y: auto;
+      height: 100%;
+    }
+
+    .menu ul {
+      padding: 100px;
+      margin-top: 1.5rem;
+    }
+
+    .menu li {
+      list-style-type: none;
+    }
+
+
+    .menu {
+      text-align: center;
+      margin-left: 2rem;
+      font-weight: 500;
+    }
+
+    .menu a {
+      position: relative;
+      color: #DD643E;
+      font-size: 2.4rem;
+      display: inline-block;
+      margin-top: 3rem;
+      transition: color 0.2s ease-in-out;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      font-family: "ff-real-text-pro", "Josefin Sans", sans-serif;
+
+    }
+
+    .menu a:before {
+      content: '';
+      height: 0;
+      position: absolute;
+      width: 0.4rem;
+      background-color: white;
+      left: -0.5em;
+      transition: all 0.3s ease-in-out;
+    }
+    .menu a:hover {
+      color: #0C1C70;
+      font-weight: 600;
+      transition: 0.5s ease all;
+    }
+
+
+    #toggle {
+      display: none;
+    }
+    /**
+    Animations
+    **/
+    #toggle:checked + .vegeburger .top {
+      transform: rotate(-45deg);
+      margin-top: 2.5rem;
+      background-color: #777777;
+    }
+    #toggle:checked + .vegeburger .bottom {
+      opacity: 0;
+      transform: rotate(45deg);
+    }
+    #toggle:checked + .vegeburger  .mid {
+      transform: rotate(45deg);
+      margin-top: -0.45rem;
+      background-color: #777777;
+    }
+
+    #toggle:checked + .vegeburger  + .nav {
+      top: 0;
+      transform: scale(1);
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+
+    @media screen and (min-width:768px) {
+
+    header {
+      padding: 1.7rem 0rem;
+    }
+
+
+    .nav-link {
+      padding: 2.2rem;
+      text-decoration: none;
+      color: #DD643E;
+      transition: 0.5s ease-in-out;
+      }
+
+      .nav-link:active {
+        color: #DD643E;
+        cursor: pointer;
+      }
+
+
+    .nav-links {
+      display: block;
+      font-size: 1.7rem;
+      font-weight: 600;
+      transition: 0.5s ease-in-out;
+    }
+
+    .nav-links li {
+      display: inline-block;
+    }
+
+    .nav-link:hover {
+      color: #0C1C70;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+
+
+    #toggle, .nav, .vegeburger  {
+      display: none;
+    }
+
+    a {
+      font-family: "ff-real-text-pro", "Lato", sans-serif;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+    }
+
+    }
+
+    @media screen and (min-width:1224px) {
+
+      .logo-container {
+          margin-left: 10rem;
+      }
+
+      .nav-links {
+        margin-right: 10rem;
+      }
+    }
+
+    /* END NAVIGATION STYLES and MEDIA QUERIES */
+
+    /* GRID WRAPPERS */
+
+.grid-wrapper {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+@media screen and (min-width:768px) {
+  .grid-wrapper {
+    grid-template-columns: 8rem repeat(4, 1fr) 8rem;
+    grid-column-gap: 2rem;
+  }
+
+}
+
+@media screen and (min-width:1224px) {
+
+  .grid-wrapper {
+    grid-template-columns: 1fr repeat(12, [row] 8rem) 1fr;
+}
+
+}
+
+/* END */
+
+
+
+/* Global Margin on all content inside the grid wrapper */
+/* Same for mobile and tablet, but zero for desktop */
+.hero-content, .chakra-project-text, .chakra-project-img, .contact-me, footer {
+  margin: 0 2rem;
+}
+
+  @media screen and (min-width:1224px) {
+    .hero-content, .chakra-project-text, .chakra-project-img, .contact-me, footer {
+      margin: 0;
+}
+
+}
+
+/* HERO CONTENT */
+
+.hero {
+  background-image: url(../images/hero-tree.png) ;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  height: 92vh;
+  align-content: center;
+
+}
+
+.hero-content {
+  text-align: left;
+  padding-top: 5rem;
+  margin: 0 2.5rem;
+}
+
+
+/* Style to not display the mouse icon */
+.scroll {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+
+
+.hero {
+  grid-column: 2 / 6;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  }
+
+.scroll {
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+}
+
+@media screen and (min-width:1224px) {
+
+.hero {
+  display: grid;
+  grid-template-columns: [edge-start] minmax(1rem, 1fr) [content-start] repeat(12, minmax(1rem, 6rem)) [content-end] minmax(1rem, 1fr) [edge-end];
+  grid-column: 1 / -1;
+  grid-gap: 2rem;
+}
+
+.hero-content {
+  grid-column: 3/ 13;
+  margin-left: 0;
+  margin-right: 0;
+
+  }
+
+
+.feat-projects {
+  grid-column: 7 / 9;
+  text-align: center;
+  bottom: 0;
+}
+
+.scroll {
+  left: 49.5%;
+}
+}
+
+/* END HERO CONTENT */
+
+/* Projects */
+
+/* MOBILE */
+.chakra-project {
+    background-image: linear-gradient(to bottom, rgb(245, 245, 253), rgb(211, 222, 252));
+    color: #FFFFFF;
+}
+
+.project-2 {
+  background-image: linear-gradient(to bottom, rgb(245, 245, 253), rgb(211, 222, 252));
+  color: #FFFFFF;
+}
+
+.chakra-project, .project-2, .contact-me{
+  padding: 10rem 0rem;
+  text-align: center;
+}
+
+.chakra-project-text, .project-2-text {
+  color: #333333;
+  grid-column: 2 / 6;
+  margin: 3rem 2rem 0 2rem;
+  padding-top: 0;
+  }
+
+.h3-roles {
+  font-size: 1.6rem;
+  letter-spacing: 0em;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.h2-proj{
+  color: #0C1C70;
+
+}
+/* TABLET */
+@media screen and (min-width:768px) {
+
+.chakra-project, .project-2 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 12rem repeat(4, 1fr) 12rem;
+  grid-template-rows: auto;
+}
+
+.chakra-project-img, .project-2-img {
+  grid-column: 1 / -1;
+  margin: 0 2rem;
+}
+
+.chakra-project-text, .project-2-text {
+  grid-column: 2 / 6;
+  margin: 3rem 10rem;
+  padding-top: 0;
+}
+
+.chakra-project-text h2, .project-2-text h2 {
+line-height: 4rem;
+}
+
+}
+
+/* LAPTOP */
+
+  @media screen and (min-width:1224px) {
+    .chakra-project, .project-2, .contact-me, footer {
+    text-align: left;
+}
+
+.chakra-project, .project-2 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 2rem;
+  padding: 20rem 0;
+  margin: 0;
+  align-items: center;
+}
+
+.chakra-project-text, .project-2-text {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  margin-left: 10rem;
+  margin-right: 0;
+}
+
+.chakra-project-img, .project-2-img {
+  grid-column: 5 / 13;
+  grid-row: 1 / 2;
+  margin-right: 10rem;
+  margin-left: 3rem;
+}
+
+.h3-roles {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+}
+
+/* end projects */
+
+
+/* contact section */
+
+.contact-me {
+  grid-column: 1 / -1;
+  padding: 6rem 0;
+  text-align: center;
+  background-color: #fffff;
+}
+
+.email h2 {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width:1224px) {
+
+.contact-me {
+  padding: 8rem 0;
+    }
+
+}
+
+/* END GET IN TOUCH SECTION */
+
+/* Buttons */
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 2rem 0;
+  width: 22.7rem;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #DD643E;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+
+.button:hover {
+  background-color: #0C1C70;
+  transition: 0.5s ease-in-out;
+}
+
+
+@media screen and (min-width:768px) {
+
+.button {
+  padding: 2.5rem 0;
+  font-size: 1.7rem;
+}
+
+}
+
+/* NO MEDIA QUERIES FOR TABLET */
+
+
+@media screen and (min-width:1224px) {
+
+.button {
+  font-size: 1.7rem;
+  height: 7rem;
+  width: 21.7rem;
+}
+
+}
+
+/* END Buttons */
+
+/* Footer */
+
+footer {
+  background-color: #F5F5Fd;
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 4rem;
+  text-align: center;
+}
+
+footer p {
+}
+
+.social-links a {
+  padding: 0 0.6rem;
+  color: #0B23FF;
+  transition: 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #0015D1;
+  transition: 0.3s ease-in-out;
+}
+
+footer p {
+  font-size: 1.7rem
+}
+
+
+@media screen and (min-width:1224px)
+
+{
+
+footer {
+  grid-column: 1 / -1;
+  padding: 2rem 0;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+}
+}
+
+/* End Footer */
+/*** END LANDING PAGE STYLES ***/

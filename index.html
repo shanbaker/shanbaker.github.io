@@ -3,83 +3,142 @@
 
 <head>
   <meta charset="utf-8">
-  <title> Portfolio | Shannon Baker | UX/UI Designer</title>
-  <link rel="stylesheet" type="text/css" href="styles/reset.css">
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Portfolio | Shan Baker | UX/UI Designer </title>
+
+<!-- Google Analytics-->
+
+
+<!-- stylesheets-->
+
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.typekit.net/eoi3vsy.css">
+
+<!--Favicon-->
+
 </head>
 
 <body>
 
-  <!--nav bar-->
+<header class="header">
+  <div class="logo-container"
+  <a href="index.html"><img class="logo" src="images/logo.svg" alt="Shan Baker" class=logo> </a>
+</div>
 
-  <nav class="navbar-fixed-top">
-    <div class="container">
-      <ul>
-        <li><a href="index.html"><img src="images/logo1.png" alt="Logo Shannon Baker" class=logo> </a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resume.html">Résumé</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<!-- vegeburger button - !!!!!!# -->
+      <input id="toggle" type="checkbox">
+      <label for="toggle" class="vegeburger">
+          <div class="top"></div>
+          <div class="mid"></div>
+          <div class="bottom"></div>
+      </label>
 
-  <!--hero-->
+      <!-- vegeburger menu !!!!!!!# -->
+    <div class="nav"><!-- Wraps entire mobile menu -->
+    <div class="nav-wrapper"><!-- Wraps menu links -->
+    <div class="menu"><!-- Menu -->
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
 
+       </ul>
+    </div><!-- END menu -->
+  </div><!-- END menu links wrap-->
+</div><!-- END entire mobile menu wrap -->
+
+<!-- tablet/desktop navigation -->
+     <div class="nav-links">
+         <ul>
+           <li><a class="nav-link" href="index.html">Work</a></li>
+           <li><a class="nav-link" href="about.html">About</a></li>
+           <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+     </div>
+   </nav><!-- END Navigation -->
+</header>
+
+<!-- css grid wrapper -->
+
+<div class="grid wrapper">
   <section class="hero">
-    <div class="container">
-      <h1>Hi, I'm Shannon -</h1>
-      <p class="slogan"> a UX/UI Designer based in the NYC Metro Area...</p>
-      <p class="subslogan"> I'm also a composer, observer, thinker, vegan foodie, energy worker, beer snob, INFP, and
+    <div class= "hero-content">
+      <h1>Hi, I'm <span class="intro">Shan</span> - </h1>
+      <h3> a UX <span class="intro">Designer</span> based in the NYC Metro Area...</h3>
+      <p class="slogan"> I'm also a composer, observer, thinker, vegan foodie, energy worker, beer snob, INFP, and
         (of course) cat
         person.</p>
     </div>
-  </section>
+
+
+    <div class="scroll">
+      <img class="chevron" src="images/chevron.png" alt="scroll icon"/>
+    </div>
+    </section>
 
   <!--projects-->
 
-  <!--chakra-->
-  <section class="projects">
-    <img src="images/chakra-persp.png" class="chakra-persp" alt="chakra perspective">
-    <h5 class="roles">2018 &emsp; UX Design, UI Design, Branding & Identity </h5>
-    <h2 class="chakra">chakra</h2>
+  <section class="chakra-project">
+    <div class="chakra-project-img">
+    <img class= "chakra-persp" src= "images/chakra-persp.png" alt="chakra desktop tablet and mobile perspective">
+  </div>
+  <div class="chakra-project-text">
+    <h3 class="h3-roles"> Product Design & Branding </h3>
+    <h2 class="h2-proj">chakra</h2>
     <h4>SAAS Application</h4>
-    <p class="description"> chakra is a cloud storage platform that allows users to share, upload and collaborate.</p>
-
-    <form action="chakra.html">
-      <button class="button1"> View Case Study</button>
+    <p> chakra is a cloud storage platform that allows users to share, upload and collaborate.</p>
+    <a href = "chakra.html"> <button class="button"> View Case Study</button>
     </form>
   </section>
 
-  <!--services-->
-  <section class="services">
-    <h2>UX/UI Design</h2>
-    <p class="description">
-      I design intuitive, seamless experiences and modern, clean interfaces for the web and mobile devices. My
-      process includes problem definition, user research, competitive analysis, personas, user stories, user
-      flows, sketching, wireframing, hi-fi mockups, prototyping, user testing and iteration.
-    </p>
+
+<!-- Get in touch -->
+
+  <section class="contact-me">
+      <div class="email">
+          <h2>Wish to connect?</h2>
+          <a href="contact.html" class="button">Get In Touch</a>
+      </div>
   </section>
 
-  <!--testimonials-->
-  <p class="testimonials"> “Insert testimonials in this area. Insert testimonials in this area. Insert testimonials
-    in this area.Insert testimonials in this area. Insert testimonials in this area.” </p>
-  <h4> Name</h4>
-  <h5> Title | Location</h5>
+  <!-- Footer -->
+  <footer>
+        <div class="footer-info">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/shanbaker/" target="_blank"><img src="images/linkedin-brands.png" alt="Linkedin Logo"
+                class="social-media"></a></li>
+              <a href="https://twitter.com/shanbakdesign" target"_blank"><img src="images/twitter-brands.png" alt="Twitter Logo" class="social-media"></a>
+                <a href="https://github.com/shanbaker" target="_blank"><img src="images/github-brands.png" alt="Github Logo" class="social-media"></a>
+       </div>
+       <div>
+          <p><i class="far fa-copyright"></i> 2018 | Shan Baker</p>
+       </div>
+       </div><!-- End wrapping all content in footer -->
+  </footer>
+
+  </div> <!--CSS grid wrapper end -->
+</body>
+</html>
 
 
-  <!--connect-->
+  <!--connect
+  <section class="contact-me">
+    <div class="email">
   <h2>Wish to connect?</h2>
-
   <form action="mailto:shanbakdesign@gmail.com">
     <button class="button1"> Email Me</button>
   </form>
+</section>
 
-  <!--footer-->
+  <! OLD footer-->
 
+
+<!--
   <footer>
-    <div class="foot">
+    <div class="footer-info">
+      <div class="social-links">
       <ul class="footer">
         <li> Shannon Baker.2018.All Rights Reserved</li>
         <li><a href="https://drive.google.com/file/d/0B3-ReHI_HCo_SkI3cE1VeDhDUjE4TkE0eGVJLTItUW5ZcWV3/view?usp=sharing">Download
@@ -90,7 +149,10 @@
         <li><a href="https://github.com/shanbaker"><img src="images/github-brands.png" alt="Github Logo" class="social-media"></a></li>
       </ul>
     </div>
-  </footer>
+  </div>
+</footer> -->
+
+
 </body>
 
 </html>
