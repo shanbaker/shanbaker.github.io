@@ -391,7 +391,7 @@ h5 {
 /* hero content */
 
 .hero {
-  /* background-image: url(../images/hero-tree.png) ;*/
+  background-image: url(../images/hero-tree.png) ;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -402,7 +402,7 @@ h5 {
 
 .hero-content {
   text-align: left;
-  padding-top: 5em;
+  padding-top: 20em;
   margin: 0 2.5rem;
 
 }
