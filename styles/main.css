@@ -77,10 +77,10 @@ h5 {
   .slogan {
     color: #555555;
     font-family: "ff-real-text-pro", "Josefin Sans", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 0.02em;
-    line-height: 1.7;
-    padding-top: 80px;
+    line-height: 3rem;
+    padding-top: 50px;
 
   }
 
@@ -89,11 +89,17 @@ h5 {
     font-weight:600;
   }
 
+  li {
+    line-height: 3rem;
+    list-style-type: disc;
+  }
+
 
   @media screen and (min-width:768px)
+
   {
     h1, h2, h3, h4, h5, h6, p {
-      margin: 2rem 0;
+      margin: 1.5rem 0;
     }
 
     h1 {
@@ -106,14 +112,14 @@ h5 {
     }
 
     h3 {
-      font-size: 3.2rem;
-      line-height: 3rem;
+      font-size: 2.2rem;
+      line-height: 2rem;
 
     }
 
 
     p {
-      font-size: 2rem;
+      font-size: 1.7rem;
       line-height: 3rem;
     }
   }
@@ -122,7 +128,7 @@ h5 {
 
     h1 {
       font-size: 5.4rem;
-      padding-bottom: 60px;
+      margin-bottom: 10rem;
       line-height: 0;
     }
 
@@ -226,6 +232,7 @@ h5 {
 
     .menu a {
       position: relative;
+      text-decoration: none;
       color: #DD643E;
       font-size: 2rem;
       display: inline-block;
@@ -282,6 +289,7 @@ h5 {
     .nav-links {
       display: none;
     }
+
 
 
     @media screen and (min-width:768px) {
