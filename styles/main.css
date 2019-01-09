@@ -399,7 +399,7 @@ h5 {
 /* hero content */
 
 .hero {
-  background-image: url(../images/hero-tree.png) ;
+  background-image: url(../images/tree-large-3.png) ;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -582,6 +582,7 @@ line-height: 4rem;
 /* contact section */
 
 .contact-me {
+  background-image: url(../images/tree-large-3.png) ;
   grid-column: 1 / -1;
   padding: 6rem 0;
   text-align: center;
