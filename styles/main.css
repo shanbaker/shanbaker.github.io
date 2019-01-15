@@ -1,7 +1,5 @@
 * {
 box-sizing: border-box;
--webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -80,7 +78,7 @@ h5 {
     font-size: 1.6rem;
     letter-spacing: 0.02em;
     line-height: 3rem;
-    padding-top: 50px;
+    padding-top: 5rem;
 
   }
 
@@ -215,7 +213,7 @@ h5 {
     }
 
     .menu ul {
-      padding: 100px;
+      padding: 10rem;
       margin-top: 1.5rem;
     }
 
@@ -410,7 +408,7 @@ h5 {
 
 .hero-content {
   text-align: left;
-  padding-top: 12rem;
+  padding-top: 15rem;
   margin: 0 2.5rem;
 
 }
@@ -457,7 +455,7 @@ h5 {
   grid-column: 3 / 13;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 5rem;
+  padding-top: 8rem;
 
   }
 
