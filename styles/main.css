@@ -235,7 +235,7 @@ h5 {
       font-size: 2rem;
       display: inline-block;
       margin-top: 3rem;
-      transition: color 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
       letter-spacing: 0.2rem;
       text-transform: uppercase;
       font-family: "ff-real-text-pro", "Josefin Sans", sans-serif;
@@ -247,7 +247,6 @@ h5 {
       height: 0;
       position: absolute;
       width: 0.4rem;
-      background-color: white;
       left: -0.5em;
       transition: all 0.3s ease-in-out;
     }
@@ -258,13 +257,10 @@ h5 {
     }
 
 
-    #toggle {
+   #toggle {
       display: none;
     }
-    /**
-    Animations
-    **/
-    #toggle:checked + .vegeburger .top {
+      #toggle:checked + .vegeburger .top {
       transform: rotate(-45deg);
       margin-top: 2.5rem;
       background-color: #777777;
@@ -397,7 +393,7 @@ h5 {
 /* hero content */
 
 .hero {
-  background-image: url(../images/tree-large-3.png) ;
+  background-image: url(../images/hero-tree.png) ;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
