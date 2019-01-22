@@ -174,27 +174,29 @@ h5 {
       width: 10rem;
     }
 
-      .vegeburger {
-      position: absolute;
-      top: 4rem;
-      right: 3rem;
-      width: 2rem;
-      height: .4rem;
-      z-index: 2;
-    }
 
-    .vegeburger div {
-      position: relative;
-      width: 3rem;
-      height: .4rem;
-      border-radius: 0.1rem;
-      background-color: #DD643E;
-      margin-top: .4rem;
-      transition: all 0.5s ease-in-out;
-    }
+    /* nav - vegeburger menu  */
 
-    /* NAV STYLES - vegeburger menu  */
-    .nav {
+    .vegeburger {
+    position: absolute;
+    top: 4rem;
+    right: 3rem;
+    width: 2rem;
+    height: .4rem;
+    z-index: 2;
+  }
+
+  .vegeburger div {
+    position: relative;
+    width: 3rem;
+    height: .4rem;
+    border-radius: 0.1rem;
+    background-color: #DD643E;
+    margin-top: .4rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+   .nav {
       position: fixed;
       width: 100%;
       height: 100%;
@@ -225,7 +227,7 @@ h5 {
     .menu {
       text-align: center;
       margin-left: 2rem;
-      font-weight: 600;
+      font-weight: 400;
     }
 
     .menu a {
@@ -346,9 +348,9 @@ h5 {
       }
     }
 
-    /* END NAVIGATION STYLES and MEDIA QUERIES */
+    /* end nav styles & media queries*/
 
-    /* GRID WRAPPERS */
+    /* grid wrapper */
 
 .grid-wrapper {
   background-color: #FFFFFF;
@@ -373,7 +375,7 @@ h5 {
 
 }
 
-/* END */
+/* end grid wrapper */
 
 
 
@@ -467,7 +469,7 @@ h5 {
 }
 }
 
-/* END HERO CONTENT */
+/* emd hero content */
 
 /* Projects */
 
@@ -505,7 +507,7 @@ h5 {
   color: #0C1C70;
 
 }
-/* TABLET */
+/* tablet */
 @media screen and (min-width:768px) {
 
 .chakra-project, .project-2 {
@@ -532,7 +534,7 @@ line-height: 4rem;
 
 }
 
-/* LAPTOP */
+/* laptop */
 
   @media screen and (min-width:1224px) {
     .chakra-project, .project-2, .contact-me, footer {
@@ -595,7 +597,7 @@ line-height: 4rem;
 
 }
 
-/* END GET IN TOUCH SECTION */
+/* contact section */
 
 /* Buttons */
 
@@ -607,11 +609,9 @@ a {
   display: inline-block;
   cursor: pointer;
   margin-top: 1rem;
-  padding: 2rem 0;
   width: 22.7rem;
   color: #FFF;
   text-align: center;
-  font-size: 1.7rem;
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
@@ -636,9 +636,6 @@ a {
 
 }
 
-/* NO MEDIA QUERIES FOR TABLET */
-
-
 @media screen and (min-width:1224px) {
 
 .button {
@@ -649,31 +646,23 @@ a {
 
 }
 
-/* END Buttons */
+/* end buttons */
 
-/* Footer */
+/* footer */
 
 footer {
   background-color: #F5F5Fd;
   grid-column: 1 / -1;
   margin: 0;
-  padding: 4rem;
+  padding: 5rem;
   text-align: center;
 }
 
-footer p {
+
+.social-media a {
+  padding: 0 1rem;
 }
 
-.social-links a {
-  padding: 0 0.6rem;
-  color: #0B23FF;
-  transition: 0.3s ease-in-out;
-}
-
-.social-links a:hover {
-  color: #0015D1;
-  transition: 0.3s ease-in-out;
-}
 
 footer p {
   font-size: 1.7rem
@@ -693,9 +682,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 10rem;
+  margin: 0 12rem;
 }
 }
 
-/* End Footer */
-/*** END LANDING PAGE STYLES ***/
+/* end footer */
+/*** end landing page styles***/
