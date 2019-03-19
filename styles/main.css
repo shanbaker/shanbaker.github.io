@@ -87,6 +87,11 @@ h5 {
     font-weight:600;
   }
 
+  p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
   li {
     line-height: 3rem;
     list-style-type: disc;
@@ -117,7 +122,7 @@ h5 {
 
 
     p {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
       line-height: 3rem;
     }
   }
@@ -381,12 +386,12 @@ h5 {
 
 /* Global Margin on all content inside the grid wrapper */
 /* Same for mobile and tablet, but zero for desktop */
-.hero-content, .chakra-project-text, .chakra-project-img, .contact-me, footer {
+.hero-content, .project-text, .project-img, .rescuefund-project-text, .rescuefund-project-img, .contact-me, footer {
   margin: 0 2rem;
 }
 
   @media screen and (min-width:1224px) {
-    .hero-content, .chakra-project-text, .chakra-project-img, .contact-me, footer {
+    .hero-content, .project-text, .project-img,.rescuefund-project-text, .rescuefund-project-img, .contact-me, footer {
       margin: 0;
 }
 
@@ -474,22 +479,22 @@ h5 {
 /* Projects */
 
 /* MOBILE */
-.chakra-project {
+.project {
     background-image: linear-gradient(to bottom, rgb(245, 245, 253), rgb(211, 222, 252));
     color: #FFFFFF;
 }
 
-.project-2 {
+.rescuefund-project {
   background-image: linear-gradient(to bottom, rgb(245, 245, 253), rgb(211, 222, 252));
   color: #FFFFFF;
 }
 
-.chakra-project, .project-2, .contact-me{
+.project, .project-2, .contact-me{
   padding: 10rem 0rem;
   text-align: center;
 }
 
-.chakra-project-text, .project-2-text {
+.project-text, .project-2-text {
   color: #333333;
   grid-column: 2 / 6;
   margin: 3rem 2rem 0 2rem;
@@ -510,38 +515,36 @@ h5 {
 /* tablet */
 @media screen and (min-width:768px) {
 
-.chakra-project, .project-2 {
+.project {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 12rem repeat(4, 1fr) 12rem;
   grid-template-rows: auto;
 }
 
-.chakra-project-img, .project-2-img {
+.project-img {
   grid-column: 1 / -1;
   margin: 0 2rem;
 }
 
-.chakra-project-text, .project-2-text {
+.project-text {
   grid-column: 2 / 6;
   margin: 3rem 10rem;
   padding-top: 0;
 }
 
-.chakra-project-text h2, .project-2-text h2 {
-line-height: 4rem;
-}
+
 
 }
 
 /* laptop */
 
   @media screen and (min-width:1224px) {
-    .chakra-project, .project-2, .contact-me, footer {
+    .project, .contact-me, footer {
     text-align: left;
 }
 
-.chakra-project, .project-2 {
+.project {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -552,15 +555,15 @@ line-height: 4rem;
   align-items: center;
 }
 
-.chakra-project-text, .project-2-text {
+.project-text {
   grid-column: 1 / 5;
   grid-row: 1 / 2;
   margin-left: 10rem;
   margin-right: 0;
 }
 
-.chakra-project-img, .project-2-img {
-  grid-column: 5 / 13;
+.project-img {
+  grid-column: 6 / 13;
   grid-row: 1 / 2;
   margin-right: 10rem;
   margin-left: 3rem;
@@ -609,10 +612,13 @@ a {
   display: inline-block;
   cursor: pointer;
   margin-top: 1rem;
+  height: 5.4rem;
   width: 22.7rem;
   color: #FFF;
   text-align: center;
   font-weight: 700;
+  font-size: 1.7rem;
+  padding: 1.8rem 0;
   text-transform: uppercase;
   white-space: nowrap;
   background-color: #DD643E;
@@ -630,9 +636,8 @@ a {
 @media screen and (min-width:768px) {
 
 .button {
-  padding: 2.5rem 0;
-  font-size: 1.7rem;
-}
+ font-size: 1.7rem;
+    }
 
 }
 
@@ -640,7 +645,6 @@ a {
 
 .button {
   font-size: 1.7rem;
-  height: 7rem;
   width: 21.7rem;
 }
 
@@ -688,3 +692,77 @@ footer {
 
 /* end footer */
 /*** end landing page styles***/
+
+/*** ABOUT PAGE STYLES *//
+
+
+.about-text {
+ padding-bottom: 8rem;
+}
+
+/* about page styles */
+
+
+.about-img {
+  padding-top: 100px;
+  padding-left: 2rem;
+  padding-bottom: 4rem;
+  margin-top: 7.5rem;
+    }
+
+.about-text {
+  margin: 0 2rem;
+  padding-bottom: 5rem;
+}
+
+@media screen and (min-width:768px) {
+ .about-me-image {
+   grid-column: 2 / 6;
+   padding-top: 2rem;
+
+ }
+
+.about-img {
+  grid-column: 2 / 6;
+  border-radius: 2rem;
+}
+
+
+ .about-text {
+   grid-column: 2 / 6;
+   padding-top: 2rem;
+ }
+
+ .about-text h2 {
+   line-height: 3.5rem;
+ }
+}
+
+
+@media screen and (min-width:1224px) {
+
+.about-text {
+  margin: 0 2rem;
+  padding-bottom: 8rem;
+}
+
+.about-me-image {
+  grid-column: 2 / 14;
+}
+
+.about-text {
+  grid-column: 2 / 12;
+  margin: 0;
+}
+
+.about-text h2 {
+  line-height: 4rem;
+}
+
+
+}
+
+
+
+
+}

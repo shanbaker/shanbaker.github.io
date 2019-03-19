@@ -1,0 +1,27 @@
+
+/* MOBILE CONTENT */
+
+img {
+  max-width: 100%;
+}
+
+.project-hero {
+  background-image: linear-gradient(to bottom, rgb(245, 245, 253), rgb(211, 222, 252));
+  padding-top: 12rem;
+  padding-bottom: 1rem;
+}
+
+.project-img {
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.rescuefund-logo {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  width: 20em;
+
+}
