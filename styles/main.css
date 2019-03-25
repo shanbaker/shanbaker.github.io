@@ -482,6 +482,9 @@ text-transform: uppercase;
 color: #0C1C70;
 }
 
+.contact.me p {
+  text-transform: none;
+}
 
 /* tablet */
 
@@ -551,7 +554,7 @@ background-image: url(../images/tree-large-3.png);
 grid-column: 1 / -1;
 padding: 6rem 0;
 text-align: center;
-background-color: #fffff;
+background-color: #ffffff;
 }
 
 .email h2 {
@@ -727,7 +730,7 @@ line-height: 4rem;
 }
 
 
-}
+
 
 /* case study styles */
 
@@ -770,7 +773,7 @@ padding-bottom: 5rem;
 margin: 0 2.5rem;
 }
 
-}
+
 .rescuefund-logo {
 padding-bottom: 4rem;
 padding-top: 4rem;
@@ -866,9 +869,7 @@ font-weight: 800;
 margin-left: 2rem;
 }
 
-}
 
-}
 @media screen and (min-width:768px) {
 .casestudy-hero {
 grid-column: 2 / 6;
@@ -880,6 +881,7 @@ margin: 0;
 padding-top: 15rem;
 margin-left: 3rem;
 margin-right: 3rem;
+}
 }
 @media screen and (min-width:1224px) {
 .casestudy-hero {
@@ -893,4 +895,5 @@ margin-right: 3rem;
   margin-left: 0;
   margin-right: 0;
   padding-top: 15rem;
+}
 }
