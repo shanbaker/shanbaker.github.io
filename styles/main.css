@@ -681,9 +681,7 @@ margin: 0 12rem;
 
 /* about page */
 
-.about-text {
-padding-bottom: 8rem;
-}
+
 
 .about-img {
 padding-top: 100px;
@@ -697,39 +695,28 @@ margin: 0 3rem;
 padding-bottom: 5rem;
 }
 
+
 @media screen and (min-width:768px) {
 .about-me-image {
-grid-column: 2 / 6;
 padding-top: 2rem;
 }
-.about-img {
-grid-column: 2 / 6;
-border-radius: 2rem;
 }
 .about-text {
-grid-column: 2 / 6;
 padding-top: 2rem;
 }
 .about-text h2 {
-line-height: 3.5rem;
+line-height: 3rem;
 }
 }
 
 @media screen and (min-width:1224px) {
+
+
 .about-text {
-margin: 0 2rem;
+margin: 0 3rem;
 padding-bottom: 8rem;
 }
-.about-me-image {
-grid-column: 2 / 14;
-}
-.about-text {
-grid-column: 2 / 12;
-margin: 0;
-}
-.about-text h2 {
-line-height: 4rem;
-}
+
 }
 
 
@@ -778,8 +765,8 @@ margin: 0 2.5rem;
 
 
 .rescuefund-logo {
-padding-bottom: 4rem;
-padding-top: 4rem;
+padding-bottom: 1rem;
+padding-top: 1rem;
 width: 20em;
 }
 .rf-logo,
