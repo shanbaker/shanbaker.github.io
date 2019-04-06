@@ -2,19 +2,18 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title> Portfolio | Shan Baker | UX/UI Designer </title>
       <!-- analytics-->
       <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137176784-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137176784-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
 
-  gtag('config', 'UA-137176784-1');
-</script>
-
+         gtag('config', 'UA-137176784-1');
+      </script>
       <!-- stylesheets-->
       <link rel="stylesheet" type="text/css" href="styles/reset.css">
       <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -22,39 +21,16 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    </head>
    <body>
-     <div class = "container">
+      <!--header-->
       <header class="header">
-         <div class="logo-container">
-            <a href="index.html"><img class="logo" src="images/shanbakerlogo.svg" alt="Shan Baker"></a>
-         </div>
-         <!-- veggie burger button -->
-         <nav>
-            <input id="toggle" type="checkbox">
-            <label for="toggle" class="vegeburger">
-               <div class="top"></div>
-               <div class="mid"></div>
-               <div class="bottom"></div>
-            </label>
-            <div class="nav">
-               <div class="nav-wrapper">
-                  <div class="menu">
-                     <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-            <!--tablet/desktop navigation -->
-            <div class="nav-links">
-               <ul>
-                  <li><a class="nav-link" href"index.html">Work</a></li>
-                  <li><a class="nav-link" href="about.html">About</a></li>
-                  <li><a class="nav-link" href="#contact">Contact</a></li>
-               </ul>
-            </div>
-         </nav>
+         <a href="index.html" ><img class="logo" src="images/shanbakerlogo.svg" alt="Shan Baker"></a>
+         <input class="menu-btn" type="checkbox" id="menu-btn" />
+         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+         <ul class="menu">
+            <li><a href="#work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
       </header>
       <section class="hero">
          <div class= "hero-content">
@@ -72,7 +48,7 @@
       <!--projects-->
       <!--RESCUEFUND-->
       <section class="project">
-         <div class="project-img">
+         <div class="project-img" id="work">
             <img class= "rescuefund-persp" src= "images/rfmock.png" alt="RescueFund iPhone perspective">
          </div>
          <div class="project-text">
@@ -97,22 +73,22 @@
          </div>
       </section>
       <!-- Get in touch -->
-      <A NAME="contact">
-         <section class="contact-me">
-            <div class="email">
-               <h2>Wish to connect?</h2>
-               <p> Please email me anytime at<br>
-      <a href="mailto:shanbakdesign@gmail.com">shanbakdesign@gmail.com</p></a>
-      </div>
+      <!--<A NAME="contact"> -->
+      <section class="contact-me">
+         <div class="email" id="contact">
+            <h2>Wish to connect?</h2>
+            <p> Please email me anytime at<br>
+               <a href="mailto:shanbakdesign@gmail.com">shanbakdesign@gmail.com</a>
+            </p>
+         </div>
       </section>
       <!-- Footer -->
       <footer>
          <div class="footer-info">
             <div class="social-media">
-               <a href="https://www.linkedin.com/in/shanbaker/" target="_blank"><i class="fab fa-linkedin-in fa-3x" alt="Linkedin Logo"
-                  class="social-media"></i></a>
-               <a href="https://twitter.com/shanbakdesign" target"_blank"><i class="fab fa-twitter fa-3x" alt="Twitter Logo" class="social-media"></i></a>
-               <a href="https://github.com/shanbaker" target="_blank"><i class="fab fa-github-alt fa-3x" alt="Github Logo" class="social-media"></i></a>
+               <a href="https://www.linkedin.com/in/shanbaker/" target= "_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+               <a href="https://twitter.com/shanbakdesign" target= "_blank"><i class="fab fa-twitter fa-3x"></i></a>
+               <a href="https://github.com/shanbaker" target= "_blank"><i class="fab fa-github-alt fa-3x"></i></a>
             </div>
             <div>
                <p> ©2018 | Designed & Developed by Shan Baker</p>

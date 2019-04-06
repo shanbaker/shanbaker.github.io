@@ -6,15 +6,14 @@
       <title> Shan Baker | UX/UI Designer </title>
       <!-- google analytics-->
       <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137176784-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137176784-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
 
-  gtag('config', 'UA-137176784-1');
-</script>
-
+         gtag('config', 'UA-137176784-1');
+      </script>
       <!-- stylesheets-->
       <link rel="stylesheet" type="text/css" href="styles/reset.css">
       <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -22,41 +21,16 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    </head>
    <body>
-     
+      <!--header-->
       <header class="header">
-         <div class="logo-container">
-            <a href="index.html"><img class="logo" src="images/shanbakerlogo.svg" alt="Shan Baker"></a>
-         </div>
-         <!--nav bar-->
-         <!-- vegeburger button-->
-         <nav>
-            <input id="toggle" type="checkbox">
-            <label for="toggle" class="vegeburger">
-               <div class="top"></div>
-               <div class="mid"></div>
-               <div class="bottom"></div>
-            </label>
-            <div class="nav">
-               <div class="nav-wrapper">
-                  <div class="menu">
-                     <!-- Menu -->
-                     <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact.html">Contact</a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-            <!--tablet/desktop navigation -->
-            <div class="nav-links">
-               <ul>
-                  <li><a class="nav-link" href="index.html">Work</a></li>
-                  <li><a class="nav-link" href="about.html">About</a></li>
-                  <li><a class="nav-link" href="#contact">Contact</a></li>
-               </ul>
-            </div>
-         </nav>
+         <a href="index.html" ><img class="logo" src="images/shanbakerlogo.svg" alt="Shan Baker"></a>
+         <input class="menu-btn" type="checkbox" id="menu-btn" />
+         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+         <ul class="menu">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
       </header>
       <!--RF hero-->
       <section class="casestudy-hero">
@@ -131,18 +105,22 @@
          <br><br>
          <img src="images/compete.png" class="compete" alt="GoFundMe, FundRazr and Waggle logos">
          <p>Based on my analysis I determined that my application would need the following in order to stand out: </p>
-         <br><br>
          <ul>
-            <li> A focus on raising funds for rescued animals veterinary care</li>
-            <p> Of my competitors, Waggle was the only fundraising site that was focused solely on animal health care. Their platform was geared more towards pets and pet owners needing funds for various medical procedures, rather than for rescuers and rescued animals.
-            </p>
-            <li>A strong mobile application</li>
-            <p>
-               Rescuing an animal is a time consuming tasks and animal rescuers are often on the go. Being able to easily and quickly set up a rescue fundraiser via smartphone and share it immediately with networks is of utmost importance.
-            </p>
-            <li>Donations to only be accessible by the performing veterinary clinic.  </li>
-            <p> This ensures that the donor’s money is going only towards the veterinary care for a rescued animal and gives the donor confidence when donating.
-            </p>
+            <li> A focus on raising funds for rescued animals veterinary care<br><br>
+               <span class ="ci"> Of my competitors, Waggle was the only fundraising site that was focused solely on animal health care. Their platform was geared more towards pets and pet owners needing funds for various medical procedures,
+               rather than for rescuers and rescued animals.</span>
+            </li>
+            <li>A strong mobile application<br><br>
+               <span class ="ci"> Rescuing an animal is a time-consuming tasks and animal
+               rescuers are often on the go. Being able to easily and quickly set up a rescue
+               fundraiser via smartphone and share it immediately with networks is
+               of utmost importance.</span>
+            </li>
+            <li>Donations to only be accessible by the performing veterinary clinic. <br><br>
+               <span class ="ci">This ensures that the donor’s money is going only towards
+               the veterinary care for a rescued animal and gives the donor
+               confidence when donating.  </span>
+            </li>
             <li>A simple, clear and intuitive interface</li>
          </ul>
       </div>
@@ -164,11 +142,11 @@
       <!--user stories & flows-->
       <div class="user-stories">
          <h5> User Stories & Flows</h5>
-         <p> To ensure a minimum viable product, I created <a href="https://docs.google.com/spreadsheets/d/1gfQ__R_oOAOU-dSqWEX-MDDwelx_-EuUVk5AS6kvr2s/edit?usp=sharing" class="link" target=_"blank">
-            user stories </a> for new and returning rescuers and donors. Based on the high priority stories, I sketched user
+         <p> To ensure a minimum viable product, I created <a href="https://docs.google.com/spreadsheets/d/1gfQ__R_oOAOU-dSqWEX-MDDwelx_-EuUVk5AS6kvr2s/edit?usp=sharing" target= "_blank">
+            user stories</a> for new and returning rescuers and donors. Based on the high priority stories, I sketched user
             flows for onboarding, signing in, creating a rescue fundraiser and making a donation. After I completed my sketched I used Figma to create digital versions
          </p>
-         <img class="uf-sketch" class="uf-sketch" src="images/rf-uf-sketch.jpeg" alt="user flow sketch - signing in and creating a rescue alert">
+         <img class="uf-sketch" src="images/rf-uf-sketch.jpeg" alt="user flow sketch - signing in and creating a rescue alert">
          <a href="https://drive.google.com/drive/folders/1ISqFCCrcUiEd2FtbjhTA4KBDXzlF_aMv?usp=sharing" target= "_blank" class="csbutton">View Digital User Flows</a>
       </div>
       <section class="wireframes">
@@ -221,7 +199,6 @@
             <img src="images/rf-appscreens.png" class="mockups" alt="iPhone Mockup Sign In">
             <a href="https://drive.google.com/drive/folders/1ISqFCCrcUiEd2FtbjhTA4KBDXzlF_aMv?usp=sharing" target="_blank" class="csbutton">View all Hi-Fi Mockups</a>
          </div>
-
       </section>
       <!--User Testing-->
       <div class="user-testing">
@@ -254,22 +231,21 @@
          </div>
       </section>
       <!-- Get in touch -->
-      <A NAME="contact">
-         <section class="contact-me">
-            <div class="email">
-               <h2>Wish to connect?</h2>
-               <p>Please email me anytime at<br>
-      <a href="mailto:shanbakdesign@gmail.com">shanbakdesign@gmail.com</p>
-      </div>
+      <section class="contact-me">
+         <div class="email" id="contact">
+            <h2>Wish to connect?</h2>
+            <p>Please email me anytime at<br>
+               <a href="mailto:shanbakdesign@gmail.com">shanbakdesign@gmail.com</a>
+            </p>
+         </div>
       </section>
       <!-- Footer -->
       <footer>
          <div class="footer-info">
             <div class="social-media">
-               <a href="https://www.linkedin.com/in/shanbaker/" target="_blank"><i class="fab fa-linkedin-in fa-3x" alt="Linkedin Logo"
-                  class="social-media"></i></a>
-               <a href="https://twitter.com/shanbakdesign" target"_blank"><i class="fab fa-twitter fa-3x" alt="Twitter Logo" class="social-media"></i></a>
-               <a href="https://github.com/shanbaker" target="_blank"><i class="fab fa-github-alt fa-3x" alt="Github Logo" class="social-media"></i></a>
+               <a href="https://www.linkedin.com/in/shanbaker/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+               <a href="https://twitter.com/shanbakdesign" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+               <a href="https://github.com/shanbaker" target="_blank"><i class="fab fa-github-alt fa-3x"></i></a>
             </div>
             <div>
                <p> ©2018 | Designed & Developed by Shan Baker</p>
@@ -277,6 +253,5 @@
          </div>
          <!-- End wrapping all content in footer -->
       </footer>
-
    </body>
 </html>
