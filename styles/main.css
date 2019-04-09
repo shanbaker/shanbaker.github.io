@@ -897,7 +897,8 @@ footer p {
 }
 
 .uf-sketch {
-   margin-left: 1rem;
+   margin-left: 2rem;
+   width: 90%;
 }
 
 .link {
@@ -940,6 +941,13 @@ footer p {
 /*tablet*/
 
 @media screen and (min-width:768px) {
+
+
+  .rescuefund {
+    margin: 3rem 1rem 0 1rem;
+    width: 90%;
+  }
+
    .project-intro h5,
    .project-info,
    .problem h5,
@@ -1000,16 +1008,25 @@ footer p {
       grid-column: 1 / -1;
    }
    .persona-img {
-      padding-right: 10rem;
-      padding-left: 3rem;
+     padding-right: 5rem;
+     width: 45%;
+
+
+
    }
+
+   .persona1 {
+     display: flex;
+     justify-content: center;
+        }
    .user-personas {
       padding-bottom: 5rem;
    }
    .uf-sketch {
-      /*grid-column: 2 / 6;*/
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+
    }
    .view-btn {
       grid-column: 3 / 5;
@@ -1130,6 +1147,7 @@ footer p {
    .uf-sketch {
       padding-left: 200px;
       grid-column: 3 / 13;
+
    }
    .persona-1 {
       display: flex;
@@ -1137,6 +1155,7 @@ footer p {
    }
    .persona-img {
       padding-left: 12rem;
+      width:auto;
       ;
    }
    .wf-sketch {
