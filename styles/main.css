@@ -423,9 +423,13 @@ footer {
       grid-column: 2 / 6;
       margin: 3rem 10rem;
       padding-top: 0;
+
+   }
+
+   .rescuefund-persp {
+     width: 80%;
    }
 }
-
 
 /* laptop */
 
@@ -460,6 +464,11 @@ footer {
    .h3-roles {
       font-size: 1.6rem;
       text-transform: uppercase;
+   }
+
+   .rescuefund-persp {
+     width: 100%;
+
    }
 }
 
@@ -700,7 +709,7 @@ footer p {
    grid-template-columns: 1fr;
    grid-template-rows: auto;
    align-content: center;
-}
+   }
 
 .casestudy-image {
    align-self: center;
@@ -709,6 +718,7 @@ footer p {
    padding-bottom: 5rem;
    margin: 0 2.5rem;
 }
+
 
 .project-intro {
    padding-top: 2rem;
@@ -734,7 +744,8 @@ footer p {
 .hifi-mockups,
 .user-testing,
 .testing-results,
-.takeaways {
+.takeaways,
+.iterations {
    padding: 2rem 0 2rem 0;
    text-align: left;
    margin: 0 2rem;
@@ -751,8 +762,9 @@ footer p {
 .wireframes h5,
 .branding h5,
 .hifi-mockups h5,
-.user-testing h5 {
-   margin: 2rem 2rem 2rem 3rem;
+.user-testing h5,
+.iterations h4 {
+   margin: 2rem 2rem 2rem 2rem;
 }
 
 .project-intro p,
@@ -774,8 +786,16 @@ footer p {
 .typeface,
 .colorpalette,
 .hifi-mockups p,
-.user-testing p {
-   margin: 0 2rem 4rem 3rem;
+.user-testing p,
+.iterations p,
+.compete
+
+{
+   margin: 0 2rem 4rem 2rem;
+}
+
+.compete {
+  width: 90%;
 }
 
 .csbutton {
@@ -863,6 +883,7 @@ footer p {
    padding-bottom: 3rem;
 }
 
+}
 .user-personas {
    padding-bottom: 5rem;
 }
@@ -1011,38 +1032,41 @@ footer p {
      padding-right: 5rem;
      width: 45%;
 
-
-
    }
 
    .persona1 {
      display: flex;
      justify-content: center;
         }
+
    .user-personas {
       padding-bottom: 5rem;
    }
+
    .uf-sketch {
     display: flex;
     justify-content: center;
     width: 90%;
 
    }
+
    .view-btn {
       grid-column: 3 / 5;
       padding-top: 1rem;
       padding-bottom: 1rem;
       margin: 0;
    }
+
    .button {
       width: 28rem;
    }
+
    .wf-sketch {
       display: flex;
       justify-content: center;
-      padding: inherit;
       background-color: #E8E8FD;
    }
+
    .wf-img1,
    .wf-img2 {
       display: flex;
@@ -1050,23 +1074,34 @@ footer p {
       background-color: #E8E8FD;
       padding-bottom: 5rem;
    }
+
    .mockup-img1,
    .mockup-img2 {
       display: flex;
       justify-content: center;
       padding-bottom: 10rem;
    }
+
    .casestudy-hero {
       grid-column: 1 / -1;
    }
+
    .casestudy-image {
       text-align: center;
       margin: 0;
    }
+
    .conclusion {
       grid-column: 1 / -1;
       display: grid;
    }
+
+   .project-intro p, .conclusion p {
+      text-align: center;
+      padding-left: 10rem;
+      padding-right: 10rem;
+      padding-bottom: 1rem;
+         }
 }
 
 /*laptop*/
@@ -1137,9 +1172,11 @@ footer p {
    .colorpalette,
    .hifi-mockups p,
    .mockup-img,
-   .user-testing p {
+   .user-testing p,
+   .compete {
       margin: 0 16rem 4rem 10rem;
       max-width: 70%;
+
    }
    .view-btn {
       grid-column: 6 / 10;
@@ -1175,17 +1212,14 @@ footer p {
       display: flex;
       justify-content: center;
    }
-   .project-intro p {
-      text-align: center;
-      padding-right: 200px;
-      padding-left: 200px;
-   }
+
    .project-intro h5 {
       padding-top: 30px;
    }
-   .conclusion p {
+   .project-intro p, .conclusion p {
       text-align: center;
-      padding-left: 100px;
-      padding-right: 100px;
-   }
+      padding-left: 30rem;
+      padding-right: 30rem;
+      padding-bottom: 4rem;
+         }
 }
