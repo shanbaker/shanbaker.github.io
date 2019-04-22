@@ -364,7 +364,6 @@ footer {
 
 /* Projects */
 
-
 /* Mobile */
 
 .project {
@@ -801,7 +800,6 @@ footer p {
   text-align: left;
   text-transform: uppercase;
   text-decoration: underline;
-
 }
 
 
@@ -926,7 +924,6 @@ footer p {
    width: 20em;
 }
 
-.rf-logo,
 .typeface,
 .colorpalette {
    padding-top: 3rem;
@@ -975,6 +972,12 @@ footer p {
    width: 90%;
 }
 
+.rf-logo {
+   margin-left: 2rem;
+   width: 90%;
+}
+
+
 .link {
    color: blue;
    text-decoration: underline;
@@ -983,6 +986,7 @@ footer p {
 .wf-images p {
    margin-left: 2rem;
 }
+
 
 .conclusion {
    background-color: #E8E8FD;
@@ -1076,8 +1080,8 @@ footer p {
    .user-stories h1,
    .user-survey h1
    {
-     font-size: 2.4rem;
-          }
+     font-size: 1.8rem;
+               }
 
 
    .project-info,
@@ -1110,6 +1114,7 @@ footer p {
    .persona1 {
      display: flex;
      justify-content: center;
+    
         }
 
    .user-personas {
@@ -1148,6 +1153,10 @@ footer p {
       padding-bottom: 5rem;
    }
 
+   .rf-logo {
+     max-width: 50%;
+   }
+
    .mockup-img1,
    .mockup-img2 {
       display: flex;
@@ -1155,7 +1164,8 @@ footer p {
       padding-bottom: 10rem;
    }
 
-   .casestudy-hero {
+
+     .casestudy-hero {
       grid-column: 1 / -1;
    }
 
@@ -1187,7 +1197,6 @@ footer p {
       grid-gap: 3rem;
    }
 
-
    .casestudy-image {
       grid-column: 2 / 13;
       margin-left: 0;
@@ -1196,7 +1205,6 @@ footer p {
       padding-left: 6rem;
       padding-bottom: 3rem;
     }
-
 
    .project-intro,
    .project-description,
@@ -1243,6 +1251,8 @@ footer p {
    .user-survey h1 {
      padding-bottom: 6rem;
      padding-top: 4rem;
+     font-size: 2.4rem;
+
     }
 
    .problem p,
@@ -1306,13 +1316,17 @@ footer p {
       justify-content: center;
       background-color: #E8E8FD;
    }
+
+   .rf-logo {
+     max-width: 50%;
+   }
    .mockup-img1,
    .mockup-img2 {
       display: flex;
       justify-content: center;
    }
 
-   .project-intro h5 {
+     .project-intro h5 {
       padding-top: 30px;
    }
    .project-intro p, .conclusion p {
