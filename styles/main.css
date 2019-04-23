@@ -859,7 +859,7 @@ footer p {
 
 .survey-findings {
   background-color: #cbcbee;
-  margin: 0 2rem 4rem 2rem;
+  margin: 0 2rem 4rem 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -923,7 +923,7 @@ footer p {
   padding-bottom: 16px;
 }
 
-.comp-analysis ul li {
+.swot ul li {
   color: #333;
   font-size: 1.8rem;
   font-weight: 800;
@@ -937,7 +937,7 @@ footer p {
   line-height: 1.5;
 }
 
-.comp-analysis li {
+.swot li {
   padding-top: 2rem;
 }
 
@@ -1062,7 +1062,7 @@ footer p {
   .branding h4,
   .user-stories h4,
   .user-survey h4 {
-    margin: 2rem 6rem 2rem 2rem;
+    margin: 2rem 6rem 2rem 3rem;
 
   }
 
