@@ -291,6 +291,7 @@ footer {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   height: 100vh;
+  height: calc(100vh - 54px);
   align-content: center;
 }
 
@@ -308,6 +309,7 @@ footer {
     grid-column: 2 / 6;
     height: inherit;
     position: relative;
+    height: calc(100vh - 54px);
   }
   .hero-content {
     text-align: center;
@@ -331,6 +333,7 @@ footer {
     grid-column: 2 / 6;
     position: relative;
     height: inherit;
+    height: calc(100vh - 54px);
   }
   .hero-content {
     text-align: center;
@@ -353,14 +356,16 @@ footer {
     grid-template-columns: [edge-start] minmax(1rem, 1fr) [content-start] repeat(12, minmax(1rem, 6rem)) [content-end] minmax(1rem, 1fr) [edge-end];
     grid-column: 1 / -1;
     grid-gap: 2rem;
+    height: calc(100vh - 54px);
   }
   .hero-content {
     grid-column: 3 / 13;
     margin-left: 0;
     margin-right: 0;
     padding-top: 15rem;
-    /*added 4-1 */
+
   }
+
   .feat-projects {
     grid-column: 7 / 9;
     text-align: center;
@@ -571,7 +576,7 @@ a {
 .csbutton {
   display: inline-flex;
   justify-content: center;
-  justify-self: center;
+  justify-self: left;
   cursor: pointer;
   width: 28rem;
   color: #0C1C70;
@@ -597,12 +602,16 @@ a {
   .button {
     font-size: 1.7rem;
   }
+
 }
 
 @media screen and (min-width:1224px) {
   .button {
     font-size: 1.7rem;
     width: 21.7rem;
+  }
+  .csbutton {
+    justify-self: center;
   }
 }
 
@@ -769,10 +778,10 @@ footer p {
 .deliverables,
 .solution-desc,
 .user-survey-desc,
-.comp-analysis,
+.swot,
 .features,
 .persona-intro,
-.user-stories,
+.stories-flows,
 .wf-intro,
 .branding-intro,
 .hifi-mockups,
@@ -793,9 +802,9 @@ footer p {
 .solution h5,
 .user-survey h5,
 .user-survey h2,
-.comp-analysis h5,
+.swot h5,
 .user-personas h5,
-.user-stories h5,
+.stories-flows h5,
 .wireframes h5,
 .branding h5,
 .hifi-mockups h5,
@@ -815,14 +824,14 @@ footer p {
   color: #DD643E;
   line-height: 1.5;
   font-family: Josefin Sans, sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 300;
-  letter-spacing: .03
+  font-style: italic;
+  letter-spacing: .03;
   padding-bottom: 3rem;
   text-align: left;
-  text-transform: uppercase;
-
-}
+  text-transform: none;
+  }
 
 .project-intro p,
 .problem p,
@@ -830,12 +839,11 @@ footer p {
 .user-survey p,
 .survey-findings h2,
 .survey-findings ul,
-.comp-analysis p,
-.comp-analysis ul,
+.swot p,
+.swot ul,
 .user-personas p,
 .persona-1,
-.persona-2,
-.user-stories p,
+.stories-flows p,
 .uf-sketch,
 .wireframes p,
 .branding p,
@@ -939,10 +947,10 @@ footer p {
   width: 20em;
 }
 
-.typeface,
-.colorpalette {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.chakra-logo {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 14em;
 }
 
 .user-personas {
@@ -976,7 +984,7 @@ footer p {
 
 .mockup-img1,
 .mockup-img2 {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   margin-left: 2rem;
   margin-right: 1rem;
 }
@@ -1044,9 +1052,9 @@ footer p {
   .solution h5,
   .user-survey h5,
   .survey-findings h2,
-  .comp-analysis h5,
+  .swot h5,
   .user-personas h5,
-  .user-stories h5,
+  .stories-flows h5,
   .wireframes h5,
   .branding h5,
   .hifi-mockups h5,
@@ -1055,6 +1063,7 @@ footer p {
   .user-stories h4,
   .user-survey h4 {
     margin: 2rem 6rem 2rem 2rem;
+
   }
 
   .project-intro p,{
@@ -1067,12 +1076,11 @@ footer p {
   .user-survey p,
   .survey-findings h2,
   .survey-findings ul,
-  .comp-analysis p,
-  .comp-analysis ul,
+  .swot p,
+  .swot ul,
   .user-personas p,
   .persona-1,
-  .persona-2,
-  .user-stories p,
+  .stories-flows p,
   .uf-sketch,
   .wireframes p,
   .wf-images,
@@ -1084,14 +1092,17 @@ footer p {
   .mockup-img,
   .user-testing p {
     margin: 0 6rem 4rem 3rem;
-    max-width: 800px;
+    max-width: 700px;
+
   }
   .user-testing h4,
   .branding h4,
   .user-stories h4,
   .user-survey h4 {
     font-size: 2.2rem;
+    padding-bottom: 2rem;
   }
+
   .project-info,
   .project-description,
   .project-intro,
@@ -1099,11 +1110,10 @@ footer p {
   .problem,
   .solution,
   .user-survey,
-  .comp-analysis,
+  .swot,
   .user-personas,
   .persona-1,
-  .persona-2,
-  .user-stories,
+  .stories-flows,
   .wireframes,
   .wf-images,
   .branding,
@@ -1115,12 +1125,13 @@ footer p {
   }
   .persona-img {
     padding-right: 5rem;
-    width: 45%;
+    width: 48%;
   }
   .persona1 {
     display: flex;
     justify-content: center;
   }
+
   .user-personas {
     padding-bottom: 5rem;
   }
@@ -1160,7 +1171,6 @@ footer p {
   }
   .mockup-img1,
   .mockup-img2 {
-    padding-bottom: 10rem;
     margin-left: 2rem;
   }
   .casestudy-hero {
@@ -1201,17 +1211,17 @@ footer p {
     padding-left: 6rem;
     padding-bottom: 3rem;
   }
-  .project-intro,
+ .project-intro,
   .project-description,
   .project-info,
   .problem,
   .solution,
   .user-survey,
-  .comp-analysis,
+  .swot,
   .user-personas,
   .persona-1,
   .persona-2,
-  .user-stories,
+  .stories-flows,
   .wireframes,
   .wf-images,
   .branding,
@@ -1219,15 +1229,17 @@ footer p {
   .user-testing,
   .conclusion {
     grid-column: 1 / -1;
+
   }
+
   .project-description h1,
   .project-info,
   .problem h5,
   .solution h5,
   .user-survey h5,
-  .comp-analysis h5,
+  .swot h5,
   .user-personas h5,
-  .user-stories h5,
+  .stories-flows h5,
   .wireframes h5,
   .branding h5,
   .hifi-mockups h5,
@@ -1236,17 +1248,23 @@ footer p {
   .branding h4,
   .user-stories h4,
   .user-survey h4 {
-    margin: 2rem 16rem 2rem 10rem;
-      /*margin: 0 auto 4rem auto;*/
-      max-width: 800px;
+    /*margin: 2rem 16rem 2rem 10rem;
+    max-width: 800px;*/
+    margin: 0 auto 4rem auto;
+    max-width: 700px;
   }
+
   .user-testing h4,
   .branding h4,
   .user-stories h4,
   .user-survey h4 {
-    padding-bottom: 6rem;
     padding-top: 4rem;
-    font-size: 2.4rem;
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 300;
+    text-transform: none;
+
   }
 
   .project-intro p,{
@@ -1259,12 +1277,12 @@ footer p {
   .user-survey p,
   .survey-findings h2,
   .survey-findings ul,
-  .comp-analysis p,
-  .comp-analysis ul,
+  .swot p,
+  .swot ul,
   .user-personas p,
   .persona-1,
   .persona-2,
-  .user-stories p,
+  .stories-flows p,
   .uf-sketch,
   .wireframes p,
   .wf-images,
@@ -1277,23 +1295,28 @@ footer p {
   .user-testing p,
   .compete,
   .survey-findings {
-    margin: 0 16rem 4rem 10rem;*/
-    /*margin: 0 auto 4rem auto;*/
-    max-width: 730px;
+    /*margin: 0 16rem 4rem 10rem;*/
+    margin: 0 auto 4rem auto;
+    max-width: 700px;
   }
   .survey-findings {
-    padding-top: 5rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
-  .view-btn {
+  /*.view-btn {
     grid-column: 6 / 10;
-  }
+  }*/
   .uf-sketch {
-    padding-left: 200px;
-    grid-column: 3 / 13;
+    /*padding-left: 200px;
+    grid-column: 3 / 13;*/
+    margin: 0 auto 4rem auto;
+    max-width: 700px;
   }
   .persona-1 {
     display: flex;
     justify-content: center;
+
   }
   .persona-img {
     padding-left: 12rem;
@@ -1309,6 +1332,7 @@ footer p {
     display: flex;
     justify-content: center;
     padding: inherit;
+    margin: 0 auto 4rem auto;
     background-color: #E8E8FD;
   }
   .wf-img1,
@@ -1319,13 +1343,20 @@ footer p {
   }
   .rf-logo {
     max-width: 50%;
-  }
+      }
+
   .mockup-img1,
-  .mockup-img2 {
-    /*display: flex;
-      justify-content: center;*/
-    margin-left: 10rem;
+  .mockup-img2
+  {
+    display: flex;
+    justify-content: center;
+
   }
+
+  .swot h5 {
+    margin-top: 2rem;
+  }
+
   .project-intro h5 {
     padding-top: 30px;
   }
@@ -1335,5 +1366,6 @@ footer p {
     padding-left: 30rem;
     padding-right: 30rem;
     padding-bottom: 4rem;
+
   }
 }
