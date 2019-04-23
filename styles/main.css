@@ -1129,7 +1129,7 @@ footer p {
   }
   .persona1 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
   }
 
   .user-personas {
@@ -1137,7 +1137,7 @@ footer p {
   }
   .uf-sketch {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     width: 90%;
   }
   .view-btn {
@@ -1151,14 +1151,14 @@ footer p {
   }
   .wf-sketch {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background-color: #E8E8FD;
 
   }
   .wf-img1,
   .wf-img2 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background-color: #E8E8FD;
     padding-bottom: 5rem;
   }
