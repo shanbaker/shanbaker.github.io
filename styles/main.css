@@ -180,10 +180,10 @@ p {
 }
 
 h1 {
-  font-size: 3.8rem;
-  font-weight: 400;
+  font-size: 5.8rem;
+  font-weight: 200;
   letter-spacing: 0.02em;
-  line-height: 3.8;
+  line-height:1.2;
   margin-bottom: 0;
   font-family: inherit;
 }
@@ -206,10 +206,12 @@ h3 {
 }
 
 h4 {
+  color: #333333;
   font-size: 2.0rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   line-height: 1.8;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -228,10 +230,18 @@ h5 {
   font-size: 1.6rem;
   letter-spacing: 0.02em;
   line-height: 3rem;
-  padding-top: 10rem;
+  padding-top: 3rem;
+  max-width: 480px;
+  margin: auto;
+
 }
 
 .intro {
+  color: #DD643E;
+  font-weight: 200;
+}
+
+.intro2 {
   color: #DD643E;
   font-weight: 600;
 }
@@ -241,7 +251,14 @@ p {
   line-height: 3rem;
 }
 
+a {
+  color: #0C1C70;
+}
 
+b, strong {
+  font-weight:bolder;
+  font-size: 2rem;
+  }
 /* Same for mobile and tablet, but zero for desktop */
 
 .hero-content,
@@ -269,7 +286,7 @@ footer {
 /* hero content */
 
 .hero {
-  background-image: url(../images/hero-tree.png);
+  background-image: url(../images/hero-tree.jpg);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -290,17 +307,16 @@ footer {
   .hero {
     grid-column: 2 / 6;
     height: inherit;
-    /*added 4-1 */
     position: relative;
   }
   .hero-content {
     text-align: center;
     margin: 3rem;
     padding-top: 15rem;
-    /*added 4-1 */
     padding-bottom: 20rem;
-    /*added 4-1 */
+
   }
+
   .scroll {
     position: absolute;
     bottom: 0;
@@ -330,8 +346,6 @@ footer {
   }
 }
 
-
-/*end added 4-1 */
 
 @media screen and (min-width:1224px) {
   .hero {
@@ -557,6 +571,7 @@ a {
 .csbutton {
   display: inline-flex;
   justify-content: center;
+  justify-self: center;
   cursor: pointer;
   width: 28rem;
   color: #0C1C70;
@@ -576,7 +591,6 @@ a {
   color: #fff;
   background-color: #444999;
   transition: 0.5s ease-in-out;
-  border: none;
 }
 
 @media screen and (min-width:768px) {
@@ -608,6 +622,7 @@ footer {
 
 .social-media a {
   padding: 0 1rem;
+  color: #DD643E;
 }
 
 footer p {
@@ -634,28 +649,36 @@ footer p {
 /* about page */
 
 .about-img {
-  margin: 0 3rem;
+  margin: 0 4rem;
   padding-top: 12rem;
 }
 
-.about-text {
-  margin: 0 3rem;
+.about-text p{
+  margin: 0 4rem;
   padding-bottom: 5rem;
-  max-width: 75%;
+
 }
 
 .about-text h1 {
-  line-height: 2;
-}
+  margin: 0 4rem;
+  line-height: 1;
+  padding-bottom: 3rem;
+  font-size: 4.6rem;
+
+  }
 
 @media screen and (min-width:768px) {
   .about-me-image {
     padding-top: 2rem;
+    max-width: 700px;
+    margin: auto;
   }
 }
 
 .about-text {
   padding-top: 2rem;
+  max-width: 700px;
+  margin: auto;
 }
 
 .about-text h2 {
@@ -664,8 +687,10 @@ footer p {
 
 @media screen and (min-width:1224px) {
   .about-text {
-    margin: 0 3rem;
+    margin: 0 rem;
     padding-bottom: 8rem;
+    max-width: 700px;
+    margin: auto;
   }
 }
 
@@ -752,12 +777,15 @@ footer p {
 .branding-intro,
 .hifi-mockups,
 .user-testing,
-.testing-results,
 .takeaways,
+.testing-results,
 .iterations {
   padding: 2rem 0 2rem 0;
   text-align: left;
+  /*max-width: 800px;
+  margin: auto;*/
   margin: 0 2rem;
+
 }
 
 .project-info,
@@ -788,11 +816,12 @@ footer p {
   line-height: 1.5;
   font-family: Josefin Sans, sans-serif;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 300;
+  letter-spacing: .03
   padding-bottom: 3rem;
   text-align: left;
   text-transform: uppercase;
-  text-decoration: underline;
+
 }
 
 .project-intro p,
@@ -828,7 +857,7 @@ footer p {
 }
 
 .compete {
-  width: 90%;
+  max-width: 80%;
 }
 
 .csbutton {
@@ -880,7 +909,7 @@ footer p {
 
 .user-survey ul li {
   font-size: 1.8rem;
-  font-weight: 800;
+  font-weight: normal;
   line-height: 1.5;
   list-style-type: none;
   padding-bottom: 16px;
@@ -996,7 +1025,8 @@ footer p {
 }
 
 .view-btn {
-  margin-left: 2rem;
+  margin: auto;
+  display: grid;
 }
 
 
@@ -1026,7 +1056,11 @@ footer p {
   .user-survey h4 {
     margin: 2rem 6rem 2rem 2rem;
   }
-  .project-intro p,
+
+  .project-intro p,{
+    margin: auto;
+    max-width: 800px;
+  }
   .project-description p,
   .problem p,
   .solution p,
@@ -1050,12 +1084,13 @@ footer p {
   .mockup-img,
   .user-testing p {
     margin: 0 6rem 4rem 3rem;
+    max-width: 800px;
   }
   .user-testing h4,
   .branding h4,
   .user-stories h4,
   .user-survey h4 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   .project-info,
   .project-description,
@@ -1107,6 +1142,7 @@ footer p {
     display: flex;
     justify-content: center;
     background-color: #E8E8FD;
+
   }
   .wf-img1,
   .wf-img2 {
@@ -1116,6 +1152,10 @@ footer p {
     padding-bottom: 5rem;
   }
   .rf-logo {
+    max-width: 50%;
+  }
+
+  .compete {
     max-width: 50%;
   }
   .mockup-img1,
@@ -1197,6 +1237,8 @@ footer p {
   .user-stories h4,
   .user-survey h4 {
     margin: 2rem 16rem 2rem 10rem;
+      /*margin: 0 auto 4rem auto;*/
+      max-width: 800px;
   }
   .user-testing h4,
   .branding h4,
@@ -1206,6 +1248,12 @@ footer p {
     padding-top: 4rem;
     font-size: 2.4rem;
   }
+
+  .project-intro p,{
+    margin: auto;
+    max-width: 700px;
+  }
+
   .problem p,
   .solution p,
   .user-survey p,
@@ -1229,8 +1277,9 @@ footer p {
   .user-testing p,
   .compete,
   .survey-findings {
-    margin: 0 16rem 4rem 10rem;
-    max-width: 70%;
+    margin: 0 16rem 4rem 10rem;*/
+    /*margin: 0 auto 4rem auto;*/
+    max-width: 730px;
   }
   .survey-findings {
     padding-top: 5rem;
@@ -1250,6 +1299,11 @@ footer p {
     padding-left: 12rem;
     width: auto;
     ;
+  }
+
+  .compete {
+    max-width: 40%;
+
   }
   .wf-sketch {
     display: flex;
