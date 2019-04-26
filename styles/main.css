@@ -11,7 +11,7 @@ html {
 
 body {
   color: #333333;
-  font-family: "ff-real-text-pro", "Lato", "Josefin Sans", sans-serif;
+  font-family: "ff-real-text-pro", "Lato", "josefin-sans", sans-serif;
   margin: 0;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -198,7 +198,7 @@ h2 {
 h3 {
   color: #333333;
   margin: 1rem 0;
-  font-family: "ff-real-text-pro", "Josefin Sans", sans-serif;
+  font-family: "ff-real-text-pro", "Josefin-Sans", sans-serif;
   font-size: 2.8rem;
   font-weight: 600;
   letter-spacing: .1em;
@@ -216,7 +216,7 @@ h4 {
 
 h5 {
   color: #0C1C70;
-  font-family: "ff-real-text-pro", "Josefin Sans", sans-serif;
+  font-family: "ff-real-text-pro", "Josefin-Sans", sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -226,13 +226,13 @@ h5 {
 
 .slogan {
   color: #555555;
-  font-family: "ff-real-text-pro", "Josefin Sans", sans-serif;
+  font-family: "ff-real-text-pro", "Josefin-Sans", sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.02em;
   line-height: 3rem;
   padding-top: 3rem;
   max-width: 480px;
-  margin: auto;
+  /*margin: auto;*/
 }
 
 .intro {
@@ -330,6 +330,11 @@ footer {
     margin-bottom: 1.5rem;
     display: block;
   }
+
+  .slogan {
+    margin: auto;
+  }
+
 }
 
 @media screen and (min-width:1024px) {
@@ -822,7 +827,7 @@ footer p {
 .user-survey h4 {
   color: #DD643E;
   line-height: 1.5;
-  font-family: Josefin Sans, sans-serif;
+  font-family: "josefin-sans", sans-serif;
   font-size: 2.4rem;
   font-weight: 300;
   font-style: italic;
@@ -859,7 +864,7 @@ footer p {
 }
 
 .survey-findings {
-  background-color: #cbcbee;
+  background-color: #ebebf7;
   margin: 0 2rem 4rem 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
