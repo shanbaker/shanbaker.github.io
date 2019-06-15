@@ -293,6 +293,8 @@ footer {
 
 .hero {
   background-image: url(../images/hero-tree.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
